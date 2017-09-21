@@ -1,0 +1,21 @@
+{
+  "name": "xplain",
+  "version": "1.0.0",
+  "description": "This is explain me please project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@faateh",
+  "license": "ISC",
+  "dependencies": {
+    "all": "0.0.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "morgan": "^1.8.2"
+  }
+}
