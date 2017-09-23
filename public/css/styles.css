@@ -1,4 +1,5 @@
-.nav {
+  
+ .nav {
   padding-left: 250px;
 }
 
@@ -22,4 +23,12 @@ a {
    padding-left: 40px
 }
 
+.col1 {
+   padding-right: 0px;
+}
+
+
+.sbox {
+  padding-right: 150px;
+}
 
