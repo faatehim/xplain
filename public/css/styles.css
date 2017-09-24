@@ -1,10 +1,15 @@
-  
- .nav {
-  padding-left: 250px;
+.nav {
+  margin-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+
 }
 
 body {
   background-color: #f5f5f5;
+  color: #202020;
 }
 
 a {
@@ -15,13 +20,11 @@ a {
   padding-left: 40px;
 }
 
-.navmenu {
-  padding-left: 40px;
+.nav-item {
+  p
 }
 
-#the-basics {
-   padding-left: 40px
-}
+
 
 .col1 {
    padding-right: 0px;
@@ -32,3 +35,9 @@ a {
   padding-right: 150px;
 }
 
+.page-header {
+	padding-right: 200px;
+	padding-left: 200px;
+
+
+}
