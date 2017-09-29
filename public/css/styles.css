@@ -9,11 +9,9 @@ a {
 }
 
 
-
-.nav-item {
-  p
+.content {
+    font-size: 1.8rem;
 }
-
 
 
 
@@ -28,4 +26,8 @@ ul {
 
 .showup {
   display: block;
+}
+
+.content {
+	text-align: center;
 }
