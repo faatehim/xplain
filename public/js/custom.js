@@ -29,7 +29,9 @@ $(document).on('click', '.panel-heading span.clickable', function(e){
 
 
 var currentSelection = "";
+
 function showContent(id) {
+	
    $(currentSelection).addClass("hidden");
 	 $(id).removeClass("hidden");
 	 currentSelection = id;
@@ -62,7 +64,7 @@ $(document).ready(function() {
 		};
 	};
 
-	var options = ['Blockchain','Ethereum','Bitcoin',];
+	var options = ['CRISPR','Ethereum','Bitcoin', "AI"];
 
 	$('#the-basics .typeahead').typeahead({
 			hint: true,

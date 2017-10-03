@@ -36,7 +36,7 @@ app.get("/", function(req,res) {
   }
 );
 var allPages = {
-  Blockchain:"blockchain",
+  CRISPR:"crispr",
   Bitcoin:"bitcoin",
   Ethereum:"ethereum"
 
