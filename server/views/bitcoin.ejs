@@ -62,9 +62,33 @@
       <div class="content text-center">
          <h3> Explain Me Please I'm the Average Joe</h3>
          <h5> History of Banks</h5>
-         <p>Historically, when one wants to transact money, they have relied on intermediaries such as banks to guarantee security and trust. These intermediaries are central authorites which have complete control of one's money and verify who owns what. But what if these intermediaries are not nessecary? What if there is no reliance on a centralized single party nessecary to guarantee trust? What is the whole system was governed by economic inventives, cryptography, and computer science?    </p>
+         <p>Historically, when people have wanted to transact money, they have relied on intermediaries such as banks to guarantee security and trust. These intermediaries are central authorites which have complete control of one's money and verify who owns what. But what if these intermediaries are not nessecary? What if there is no reliance on a centralized single party nessecary to guarantee trust? What is the whole system was governed by economic inventives, cryptography, and computer science?    </p>
          <h5> Introducing Bitcoin</h5>
-         <p> Bitcoin a digital currency which is decentralized, simply meaning there is no one person with much control.</p>
+         <p> Bitcoin a digital currency which is decentralized, simply meaning there is no one person with much control. The Bitcoin network consists of a blockchain, or a long list of all transactions that have been verified. The Bitcoin Blockchain has a few interesting properties: </p>
+            <p> • Immutable: when a transaction is submitted to the bitcoin network and is on the blockchain for at least 60 min's, changing or erasing it becomes pretty much impossible. </p>
+            <p> • Irreversable: When a transaction is sent to the bitcpin network, there is no way to cancel the transaction or retrieve the send funds. </p>
+
+            <p> • Public: Anybody can look at the Bitcoin Blockchain and analyze it. This doesn't mean that one can nessecarily associate your name with your transactions. </p>
+            <p> • Distributed: They are many copies of the blockchain held my computers (nodes) all around the universe. There is no special master copy. Anyone can download the Bitcoin Blockchain. </p>
+
+            <p> This database is called a blockchain because transactions get grouped into larger blocks, which are chained together in a sequence. A new block of transactions is added to the blockchain about every 10 minutes. </p>
+
+            <p> Now you may be wondering - how are "bitcoins" created? How is the network secure? Can't anyone add to the blockchain or tamper with it. To understand that, we must first understand the math behind Bitcoin, which in my opinion, is the most interesting and beautiful part. Don't be scared, we will go slowly through :) </p>
+
+            <h5> Hashing Explained </h5>
+            <p> A hash function takes any input, and produces an output of a specific size. Bitcoin uses the hash function SHA-256. Hash functions have a few cool properties.  </p>
+            <p>   • They will always produce an output of fixed length => No matter whether you are hashing the entire Harry Potter series or a paragraph, you will always get a 256 bit output when you use the hash function SHA-256 </p>
+
+
+            <p>   • One output will always get the same output => When you hash the sentence "I love pineapples" and put it through a SHA-256 function, you will always get the hash "271ad015e767b066ccc6e8d7b87ba76eecf4a1752ac192bd6de44f64d3f5e21c" 100% of the time. </p>
+
+            <p>   • Hash functions follow the avalanche effect => One small change in the will result in a BIG change in the output.
+            Example: The hash of "I love pineapples" is "271ad015e767b066ccc6e8d7b87ba76eecf4a1752ac192bd6de44f64d3f5e21c"
+            However, the hash of "I love pineapple" is "555cc915e9580c14db63c61126b5b1c43a88ed42b083d0a693ce122651edb5d8". Even though I only took out the s in the second input, the hash complete changed</p>
+
+            <p>   • Hash functions are one way => It is easy to hash x and figure out what y is. However it is impossible to figure out the input when your know the output.</p>
+
+
          <p> More advanced/technical resources => <a href="https://medium.com/@tessr/making-money-530d2bb2b8f7">Bitcoin Explained using Emoji's</a>, <a href="https://dealbook.nytimes.com/2014/01/21/why-bitcoin-matters/">Why Bitcoin Matter's</a>, <a href="https://qz.com/154877/by-reading-this-page-you-are-mining-bitcoins/"> By Reading this Article, You Are Mining Bitcoins</a>   </p>
       </div>
     </div><!-- /.panel-->
