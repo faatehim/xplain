@@ -47,6 +47,7 @@
                  <a href="#" class="nav-item" onclick="showContent('#X5')"> |Rational Skeptic|
                  </a>
                  <a href="#" class="nav-item" onclick="showContent('#X6')"> |Podcast Lover|</a>
+                 <a href="#" class="nav-item" onclick="showContent('#X7')"> |Investor|</a>
           </div>
         
     <div class="row">
@@ -61,7 +62,82 @@
     <div id="X1" class="hidden content text-center">
          <h3> Explain Me Please I'm the Average Joe</h3>
 
-         <p> More advanced/technical resources => <a href="https://medium.com/@tessr/making-money-530d2bb2b8f7">Bitcoin Explained using Emoji's</a>, <a href="https://dealbook.nytimes.com/2014/01/21/why-bitcoin-matters/">Why Bitcoin Matter's</a>, <a href="https://qz.com/154877/by-reading-this-page-you-are-mining-bitcoins/"> By Reading this Article, You Are Mining Bitcoins</a>   </p>
+         <p> Ethereum is a decentralized application and smart contract platform on the blockchain. Before we dive into what all of that means, you must understand what a blockchain is.....</p>
+
+         <h3> Blockchain Explanation</h3>
+
+         <p> Knowledge about bitcoin would be useful </p>
+
+         <p> A Blockchain is a distributed, immutable, public ledger </p>
+
+         <p> Distributed meaning there is no master copy by non person. They are many synchronized versions of the blockchain on nodes(computers) all around the world </p>
+
+         <p> Immutable meaning that once a transaction is present in the blockchain for an hour or two, altering or erasing it becomes impossible. This is because it requires a lot of computational power to undo the transaction. </p>
+
+         <p> A ledger is simply a list of transaction in a blockchain </p>
+
+         <p> To understand how several people are able to keep their copies of the database in sync with everyone else, imagine there are ten individuals in a network. Everyone is sitting with an empty file folder and an empty page in front of them. Whenever anyone does something important in the network, like transferring money, they announce it to everyone in the network.
+
+        <p> Everyone makes a note of the announcement on their pages until the page is filled. When it does, everyone has to seal the contents of the page by solving a mathematical puzzle. Solving the mathematical puzzle ensures that everyone’s page had same contents and that they can never be modified. Whoever does it first, gets rewarded with some amount of cryptocurrency. </p>
+
+        <p> Once the page is sealed, the page is added to the file folder, a new page is brought out and the process continues forever. As time passes, these pages (blocks) that contain important records (transactions) are added to the folder (chain), thus forming the database (blockchain). </p>
+
+        <h3> Uses of Blockchain </h3>
+
+        <p> Bitcoin uses the blockchain to store records of financial transactions, acting like a bank to guarantee security and trust. However, people started to realized Bitcoin was restrictive in programming money and building applications onto the blockchain. Building basic applications like a decentralized crowdfunding app required months of work even for seasoned programmers. Introducing Ethereum.
+
+        <h3> How does Ethereum work </h3>
+
+        <p> Just like any other Blockchain, Ethereum requires many nodes(computers) running a software on their computer to guarantee security and trust. Every node participating in the Ethereum protocol runs a software on their on their computer called Ethereum Virtual Machine(EVM). The EVM is a system which understands and executes all the software written in an specific Ethereum programming language - Solidity(similar to Javascript) and Serpent (similar to Python). The applications or software run by the EVM are called "smart contracts" </p>
+
+        <p> This is what makes Ethereum a world computer, but a expensive and slow one. It has about the same processing power as an old and crusty 90's smartphone. You may be asking, if that is true, what would anyone use Ethereum? Well we will talk about that </p>
+
+        <p> To run any smart contract, you must pay a price so no unlimited loops can be run which crash the system. You must pay this price in Ethers, the native cryptocurrency to Ethereum. Ether is to Ethereum as Bitcoin(currency) is to Bitcoin(system) </p>
+
+        <p> In Ethereum, they are 2 types of accounts or users. </p>
+
+        <p> 1. Externally Owned Accounts => owned by some external entity (say a person or company), can send and receive ether's </p>
+
+        <p> 2. Contract Accounts => smart contracts, can send and receieve ethers just like externally owner accounts but can also run a predifined computer program to perform various actions when triggered. </p>
+
+        <h3> Example </h3>
+
+        <p> Lets say Mike and Annie want to place a bet on a soccer game. Mike is a fan of the team Real Madrid and Annie is a ardent supporter of FC Barcelona(rivals). There is a Real Madrid vs FC Barcelona game coming up in a few days. They agree that the losing team's fan will have to pay the other $500. They are many ways to do this, with each having its pro's and cons </p>
+
+        <p> 1. Trusting Each Other <br> This could work as both Mike and Annie are friends and the amount we are betting is not to much. However what if they were strangers who did not trust each other? What is these was a large amount of money and they did not want any cheating happening? </p>
+
+        <p> 2. Signing a Legal Agreement <br> Sure they could go to court and both sign an agreement that defines all the terms of our bet and the consequence for the loser. However this process would be incredibly time consuming and expensive. </p>
+
+        <p> 3. Get Help from Friend they both knew and trusted <br> This could work as they would both give their $500 to him. After the match had ended, the trusted friend could check the score and give the $1000 to the winner. However, this method has similar shortcomings to the first method of both Mike and Annie trusting each other. If they were strangers, they could not trust each other. Is there another cheap, easy way which guarantees the winner will get $1000 after the match? </p> 
+
+        <p> Creating a smart contract on Ethereum could help save Annie and Mike's day in this case. They could write code that accepts $500 from both of their accounts, and then the next day uses an API to check the match score and transfer the ether worth of $1000 to the winner. Win-win situation. A smart contract also has the pro's that it is immutable, as it is in the blockchain. No one can do any cheating.</p>
+
+        <h3> How are smart contracts related to blockchain? </h3>
+
+        <p> They are 3 kinds of transactions on the blockchain... </p>
+
+        <p> 1. Transfer of Ether from one account to another account <br> Bitcoin-like transactions. Contains info about the humans sender and human recipient </p>
+
+        <p> 2. Transfer of ether from one user to no one <br> These transactions are used to create a smart contract using contents present in the data field. These transactions contain info about the Sender and Data. This data contains the code which will run the smart contract </p>
+
+        <p> 3. Tranfers of ether from extrnally owned account to a smart contact <br> Whenever a account wants to execute a smart contract, they must make a transaction to the smart contract and put the instructions for the execution in the data field </p>
+
+        <h3> What is Gas? </h3>
+
+        <p> Every smart contract must pay a certain price for the EVM to execute it .This price is paid to the node that actually spends memory, storage, computation and electricity to execute and verify the smart contract. </p>
+
+        <p> To calculate the prices of smart contracts, every statement has an assigned cost to it.  The unit in which the cost is defined is called Gas. Eventually, Gas is converted to ether using an exchange rate. Whenever you execute a smart contract, you have to define the maximum Gas to be consumed. The execution will stop either when the execution is completed or when the Gas Limit is reached. This is done to avoid infinite loops in smart contracts, preventing the program getting stuck executing a set of statements repeatedly without proceeding further. </p>
+
+        <p> Such situations occur because of programmer’s carelessness. With every repetition, some of the assigned Gas will be used, thus making any infinite loop a finite one. It doesn’t make any sense for a node to be stuck in execution because of a programmer’s mistake. The concept of Gas solves this problem. </p>
+
+        <h3> Conclusion </h3>
+
+        <p> That is Ethereum. It allows for the first time in history, money to be programmable. Places where they are traditionally multiple third parties whih make the process slow are now not neccesary. With Ethereum, a piece of code could automatically transfer the home ownership to the buyer and the funds to the seller after a deal is agreed upon without needing a third party to execute on their behalf. </p>
+
+        <p> The potential for this is incredible! Think of the numerous applications that act as a third party to connect you with others based on some set logic (e.g. Uber, Airbnb, eBay). Many of the centralized systems we use today could be built in a decentralized manner on Ethereum. With Ethereum you can make these transactions trustless which opens up an entire world of decentralized applications. </p>
+
+
+
     </div><!-- /.panel-->
 
        <div id="X2" class="hidden">
