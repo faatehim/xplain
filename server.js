@@ -38,7 +38,8 @@ app.get("/", function(req,res) {
 var allPages = {
   CRISPR:"crispr",
   Bitcoin:"bitcoin",
-  Ethereum:"ethereum"
+  Ethereum:"ethereum",
+  AI:'ai'
 
 }
 
