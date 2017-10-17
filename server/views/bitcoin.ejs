@@ -60,13 +60,18 @@
 
     <div id="X1" class="hidden content text-center">
          <h3> Explain Me Please I'm the Average Joe</h3>
+
          <h5> History of Banks</h5>
+
          <p>Bitcoin is considered the first decentralized digital currency. However what does that mean? Why do we even need Bitcoin?  </p>
+
          <p>One problem that has always been present with decentralized digital currencies prior to bitcoin is the transfer of ownership of money. How do we know who owns what? What if some send 4 coins to me online but also sends it to 3 other people? Who validates transactions? Another problem with digital currencies is that they are not scarce and can be copied. This is not present with government-backed paper currencies as they are created in a way which cannot be copied easily. </p>
+
          <p> Centralized digital currencies, or currencies regulated and secured by one party, solve this problem by keeping a log of all transactions that have taken place. They make sure no one can spend the same coin twice or make fraudelent transactions. This is all well and good except for a few problems. The first is that there is a single point of faulure. If a government dislikes a currency, they can just shut down the operators. This is exactly what happened with Liberty Reserve. Another problem with centralized digital currencies is that the operating party must be trusted. People to use x centralized currency must trust that the operators will not mess with their money and will keep their integrity. There is clearly a need for a censorship resistant digital currency that does not have a single point of failure which cannot be shut down and only requires trust in math </p>
+
          <p> Bitcoin solves the problem by making its system public and distributed. Public means that any can look at the blockchain history. Distributed means that instead of only one party holding the transaction history like in a centralized digital currency, they are many synchronized copies of the transaction history held by computers(nodes) all over the world. Anybody can download the transaction history and verify that no fraudent transactions have taken place. This however, creates a lot more problems that solutions. For one. how do people form a agreement on which transactions have been verified and confirmed? How do we ensure that transactions get included into the public transaction history? This problem is called the Byxantine General Problem. If this problem is prevalent in the Bitcoin network, Bitcoin would be plagued which competing transacton histories, fraudelent transactions, and people only working for their own interests and their transactions. </p>
 
-         <p> One solution could be letting people vote for which transaction history they believe to be valid. This however is not a really good solution. It is not that hard for a malicious attacker wanting to hijack the system to take control of many computers. A consensus system where every IP address would get a vote would be corrupted very easily. 
+         <p> One solution could be letting people vote for which transaction history they believe to be valid. This however is not a really good solution. It is not that hard for a malicious attacker wanting to hijack the system to take control of many computers. A consensus system where every IP address would get a vote would be corrupted very easily. </p>
 
          <h3> Bitcoin's Solution </h3>
 
@@ -74,7 +79,7 @@
 
          <p> A miner is a node in the Bitcoin network who takes it upon himself to collect the transactions it receives and work to organize it into blocks (can be considered as packages of transactions). When a miner receives a transactions, he verifies it and then adds it to his memory pool along with other unconfirmed transactions and begins creating a block. A block has a max capacity of 1000 kB, which can hold about 2000 transactions max. One important point to note is that all miners are competing against each other to create a block. When a miner creates a block, it broadcasts it to its peers (similar to broadcasting a transactions). Every user vaildates the block and if it is correct, they add it to their local copy of the blockchain. </p>
 
-         <p> Whicheer miner created a valid block is rewarded for his hard work with newly minted bitcoins. The system regulates the rate at which bitcoins are created. It is currently 12.5 per block. Bitcoin is a deflationary system because there will only be 21 million bitcoins created. However if mining is just putting valid transactions in a block, what can stop miners from creating blocks favoring certain individuals and creating multiple versions of the block chain? </p>
+         <p> Whichever miner created a valid block is rewarded for his hard work with newly minted bitcoins. The system regulates the rate at which bitcoins are created. It is currently 12.5 per block. Bitcoin is a deflationary system because there will only be 21 million bitcoins created. However if mining is just putting valid transactions in a block, what can stop miners from creating blocks favoring certain individuals and creating multiple versions of the block chain? </p>
 
          <h3> Consensus System: Proof of Work </h3>
 
@@ -97,15 +102,21 @@
       <p> Let us now look into the math behind Bitcoin. It might seem scary, but it is actually pretty simple and really interesting. </p> 
 
       <h3> Hashing </h3>
+
             <p> A hash function takes any input, and produces an output of a specific size. Bitcoin uses the hash function SHA-256. Hash functions have a few cool properties.  </p>
-            <p>   • They will always produce an output of fixed length => No matter whether you are hashing the entire Harry Potter series or a paragraph, you will always get a 256 bit output when you use the hash function SHA-256 </p>
 
+            <p> • They will always produce an output of fixed length => No matter whether you are hashing the entire Harry Potter series or a paragraph, you will always get a 256 bit output when you use the hash function SHA-256 </p>
 
-            <p>   • One output will always get the same output => When you hash the sentence "I love pineapples" and put it through a SHA-256 function, you will always get the hash "271ad015e767b066ccc6e8d7b87ba76eecf4a1752ac192bd6de44f64d3f5e21c" 100% of the time. </p>
+            <p>• One output will always get the same output => When you hash the sentence "I love pineapples" and put it through a SHA-256 function, you will always get the hash <br>"271ad015e767b066ccc6e8d7b87ba76 eecf4a1752ac192bd6de44f64d3f5e21c"<br> 100% of the time. </p>
 
-            <p>   • Hash functions follow the avalanche effect => One small change in the will result in a BIG change in the output.
-            Example: The hash of "I love pineapples" is "271ad015e767b066ccc6e8d7b87ba76eecf4a1752ac192bd6de44f64d3f5e21c"
-            However, the hash of "I love pineapple" is "555cc915e9580c14db63c61126b5b1c43a88ed42b083d0a693ce122651edb5d8". Even though I only took out the s in the second input, the hash complete changed </p>
+            <p>   • Hash functions follow the avalanche effect => One small change in the will result in a BIG change in the output. </p>
+
+            <p>
+            Example: The hash of "I love pineapples" is <br>"271ad015e767b066ccc6e8d7b87ba <br>76eecf4a1752ac192bd6de44f64d3f5e21c" <br>
+            </p>
+
+            <p>
+            However, the hash of "I love pineapple" is <br>"555cc915e9580c14db63c61126b <br>b1c43a88ed42b083d0a693ce122651edb5d8" <br> Even though I only took out the s in the second input, the hash complete changed </p>
 
             <p>   • Hash functions are one way => It should be a piece of cake to compute an output for any given input, however it should be impossible to compute the input when you know the output. Even with knowing the mathematical equation behind hash functions, some hash functions are unbreakable even with quantum computers supposedly.</p>
 
@@ -143,7 +154,12 @@
           <p> That is public key cryptography. People guard their private key very carefully, since a private key can unlock any of its corresponding public keys. If you know one's private key, you have access to any of the funds associated with their public key. </p>
 
          <p> More advanced/technical resources => <a href="https://medium.com/@tessr/making-money-530d2bb2b8f7">Bitcoin Explained using Emoji's</a>, <a href="https://dealbook.nytimes.com/2014/01/21/why-bitcoin-matters/">Why Bitcoin Matter's</a>, <a href="https://qz.com/154877/by-reading-this-page-you-are-mining-bitcoins/"> By Reading this Article, You Are Mining Bitcoins</a>   </p>
-    </div><!-- /.panel-->
+
+
+
+
+
+   </div><!-- /.panel-->
 
        <div id="X2" class="hidden">
             <div class="content text-center">
@@ -197,10 +213,11 @@
                 <p> 4. P+ Elipson Attack: good article explaining it => <a href="https://blockchainatberkeley.blog/understanding-crypto-economic-security-through-game-theory-526e810c7736">Understanding Crypto Economic Security though Game Theory</a>  </p>
             </div>
         </div><!-- /.panel-->
-        <div id="X6" class="hidden">
-            <div class="content text-center">
-                <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/5776063/height/90/width/700/theme/custom/autonext/no/thumbnail/yes/autoplay/no/preload/no/no_addthis/no/direction/forward/render-playlist/no/custom-color/87A93A/" height="90" width="700" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-                <p> Non technical intro to blockchains with thoughts from Naval Ravikant, Olaf Carlson-Wee, Fred Ehrsam and Ari Paul.
+        <div id="X6" class="hidden content text-center">
+
+                <p> <a href="http://investlikethebest.libsyn.com/podcast/hash-power-ep-1-understanding-blockchains"> Hash Power Episode 1- Understanding Blockchains</a> </p>
+
+                <p> Non technical intro to blockchains with thoughts from Naval Ravikant, Olaf Carlson-Wee, Fred Ehrsam and Ari Paul. </p>
                 <p> Talks about things such as: <p>
                 <p> Permission vs Permission less network </p>
                 <p> Societal Structures</p>
@@ -208,7 +225,6 @@
                 <p> Alternative Tokens and Coins </p>
                 <p> Nonces </p>
 
-            </div>
         </div><!-- /.panel-->
 
     </div>
