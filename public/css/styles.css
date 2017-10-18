@@ -28,3 +28,6 @@ ul {
   display: block;
 }
 
+li {
+	padding-bottom: 30px;
+}
