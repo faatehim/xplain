@@ -75,7 +75,7 @@
 
          <p> One solution could be letting people vote for which transaction history they believe to be valid. This however is not a really good solution. It is not that hard for a malicious attacker wanting to hijack the system to take control of many computers. A consensus system where every IP address would get a vote would be corrupted very easily. </p>
 
-         <h3> Bitcoin's Solution </h3>
+         <h5> Bitcoin's Solution </h5>
 
          <p> Bitcoin solves all of this. When you want to transact on the Bitcoin network, you first connect to the system and to several other users (called nodes or peers) who are also using the Bitcoin network. When you make a transaction, your computer broadcasts it to the nodes you are connect to. When they receive the transaction, every node will vrrify the transaction to make sure it is valid by making sure the coins have not been spent, the receiver of the coins is valid, etc). If this process is successful, the nodes will relay to its peers. Eventually this transaction will propogate(reach) to all users. </p>
 
@@ -83,7 +83,7 @@
 
          <p> Whichever miner created a valid block is rewarded for his hard work with newly minted bitcoins. The system regulates the rate at which bitcoins are created. It is currently 12.5 per block. Bitcoin is a deflationary system because there will only be 21 million bitcoins created. However if mining is just putting valid transactions in a block, what can stop miners from creating blocks favoring certain individuals and creating multiple versions of the block chain? </p>
 
-         <h3> Consensus System: Proof of Work </h3>
+         <h5> Consensus System: Proof of Work </h5>
 
          <p> The Bitcoin System specifies that in order to produce a valid block, a miner must submit proof that they have invested significant computing power, hence time and electricity to validate the blocks. This is done by miners submit an answer to a math problem which can only be found by running random numbers through an equation over an over until you get less than certain number. This problem's difficulty is created so that it takes on average 10 minutes for someone to solve the problem and create a valid block. This solves many problems prevelant in the Byzantine General's. Consider, for example, a situation where there are competing transaction histories (a “fork” in the block chain). </p>
 
@@ -99,11 +99,11 @@
 
       <p> So to sum up, given the likelihood of failure, the only rational thing to do is simply to give up mining alternative chains, accept the network consensus and move on. The opportunity cost of mining blocks that will not be included in the main chain is just too high. Because of this incentive structure, profit maximizing miners will always choose to mine on the majority chain guaranteeing that the millions of disparate Bitcoin users will be able to agree on a single transaction history. </p>
 
-      <h3> PT 2: The math </h3>
+      <h5> PT 2: The math </h5>
 
       <p> Let us now look into the math behind Bitcoin. It might seem scary, but it is actually pretty simple and really interesting. </p> 
 
-      <h3> Hashing </h3>
+      <h5> Hashing </h5>
 
             <p> A hash function takes any input, and produces an output of a specific size. Bitcoin uses the hash function SHA-256. Hash functions have a few cool properties.  </p>
 
@@ -125,11 +125,11 @@
             <p>   • Hash functions should have no collisions => It should be a piece of cake to compute an output for any given input, however it should be impossible to compute the input when you know the output. Even with knowing the mathematical equation behind hash functions, some hash functions are unbreakable even with quantum computers supposedly.</p>
 
 
-            <h3> Merkle Trees </h3>
+            <h5> Merkle Trees </h5>
 
             <p> So if you recall, when a miner receives a transaction, they verify it and  place it in their memory pool of unconfirmed transactions. This is when they start creating a block. After verifying the transactions, they start hashing every transaction in the memory pool using Bitcoin's hash function SHA-256. After they do this, they start to build what is called a merkle tree with the hashes. If you are familiar with a tourmanent bracket, you will understand the concept.  The hashes of the transactions are organized into pairs of twos, concatenated together, then hashed again until there is one hash remaining(merkle root). So the merkle root of the hash is placed into the blocks header along with the hash of the previous block and a randm number called a no ce. A Block Header looks like this: The block header is then hashed which produces an output which will the block identifier. Now we can broadcast this block and collect out payout. Hold up. Not so fast. We still have to solve that hard mathematical problem, or proof of work </p>
 
-            <h3> Proof of Work </h3>
+            <h5> Proof of Work </h5>
 
             <p> The Bitcoin system sets a target value for a block header's hash. THe output must be less than x, a number specified by the Bitcoin protocol. Your block's header must have a hash value less than the target value or else it will be rejected by other nodes in the network </p>
 
@@ -143,11 +143,11 @@
 
             <p> This is why merkle tree's are used in Bitcoin. The transactions are included in the header by the merkle root so that the entire transaction history of the block doesn't need to be rehashed with each attempt. Any change anywhere in the merkle tree will cause the merkle root to change, which will cause the hash of the block to change </p>
 
-            <h3> Hash Chaining </h3>
+            <h5> Hash Chaining </h5>
 
             <p> The hash of each block is included in the header of the next block. This helps create what is called a blockchain, or a linking of all blocks. If a malicious miner wants to alter or remove a transaction already present in a blocl in the block chain, this change with cause the hash of the transaction to change which will ultamatley change the merkle tree and the merkle root. The header will now 99.9% will not produce a valid block. The attacker will know have to hash the entire block header and spend a lot of time trying to find a correrct nonce. Imagine if he does this, ccan he just broadcast this block to the network and hope miners will replace the old block with his new one and new users downloading his new block? Well, the answer is No. This is because the header of the each block includes the hash of the previous block.  
 
-          <h3> Public and Private Key Cryptography </h3>
+          <h5> Public and Private Key Cryptography </h5>
 
           <p> They are 2 types of cryptography we will be talking about - symmetric and assymetric cryptography. Let us see how symmetric cryptography works. Billy has a box which he fills with important documents (passport, birth certificate , etc). This box has a lock. As normal, the lock has a key used to lock and unlock the box. This is symmetric cryptography, one key which can do all functions such as encryption and decryption. </p>
 
@@ -158,14 +158,11 @@
          <p> More advanced/technical resources => <a href="https://medium.com/@tessr/making-money-530d2bb2b8f7">Bitcoin Explained using Emoji's</a>, <a href="https://dealbook.nytimes.com/2014/01/21/why-bitcoin-matters/">Why Bitcoin Matter's</a>, <a href="https://qz.com/154877/by-reading-this-page-you-are-mining-bitcoins/"> By Reading this Article, You Are Mining Bitcoins</a>   </p>
 
 
-
-
-
    </div><!-- /.panel-->
 
        <div id="X2" class="hidden">
             <div class="content text-center">
-                <h3> Explain me please for curious soul</h3>
+                <h3> Explain me please, I love videos.</h3>
                  <iframe width="560" height="315" src="https://www.youtube.com/embed/t5JGQXCTe3c" frameborder="0" allowfullscreen></iframe>
                  <iframe width="560" height="315" src="https://www.youtube.com/embed/51aJ9PAohZU" frameborder="0" allowfullscreen></iframe>
                  <iframe width="560" height="315" src="https://www.youtube.com/embed/bBC-nXj3Ng4"" frameborder="0" allowfullscreen></iframe>
@@ -202,13 +199,14 @@
         </div><!-- /.panel-->
         <div id="X4" class="hidden">
             <div class="content text-center">
+                <h3> Explain me please, I am 5 years old. </h3>
                 <img src="http://i.imgur.com/kuj9sPP.gif">
                 <p> Cash is a really amazing product. Cash is anonymous, you can walk up to a stranger, you dont know him, and give him the dollar bill. He can then walk into a store and buy something without the guy at the register wondering where he got the dollar bill. Cash is non-refundable. Thats why lots of people (including criminals, but lets not let them spoil the party) love cash. Thats why merchants love cash. Cash doesn´t require you signing up for something. Cash requires no credit checks. Cash can be used by the poorest of the poor and requires no banking services. Bitcoin is not PayPal, its not VISA, its not SWIFT. Its electronic cash </p>
             </div>
         </div><!-- /.panel-->
         <div id="X5" class="hidden">
             <div class="content text-center">
-                <h3> <b> Explain Me Please I Want to purchase bitcoins</b> </h3>
+                <h3> Explain me please, I want to purchase Bitcoins </h3>
 
                 <p> First before you buy bitcoins, you must understand the concept of wallets. </p>
 
@@ -247,11 +245,11 @@
                 <p> <a href="cex.io"> Cex.io </a> Cex is a amazing exchange because of their diverse range of services. They now have over 700 000 users and accept Euro, US Dollar, and Russian Ruble. Wire transfer and SEPA payments are also accepted. CEX have a Level 2 PCI DSS data security clearance meaning that this site is extremely trustworthy with users data and money. </p>
 
 
-
             </div>
         </div><!-- /.panel-->
         <div id="X6" class="hidden content text-center">
 
+                <h3> Explain me please I love podcasts </h3>
                 <p> <a href="http://investlikethebest.libsyn.com/podcast/hash-power-ep-1-understanding-blockchains"> Hash Power Episode 1- Understanding Blockchains</a> </p>
 
                 <p> Non technical intro to blockchains with thoughts from Naval Ravikant, Olaf Carlson-Wee, Fred Ehrsam and Ari Paul. </p>
