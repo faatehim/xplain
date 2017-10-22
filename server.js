@@ -39,7 +39,8 @@ var allPages = {
   CRISPR:"crispr",
   Bitcoin:"bitcoin",
   Ethereum:"ethereum",
-  AI:'ai'
+  AI:'ai',
+  Yemen: 'yemen'
 
 }
 
