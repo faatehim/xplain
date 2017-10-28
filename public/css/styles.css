@@ -36,6 +36,13 @@ li {
 .content  {
 	 line-height: 250%;
 	 font-family: 'Lora', serif;
+	 text-align: left;
 
 
 }
+
+
+.page-header {
+	font-size : 45px;
+}
+
