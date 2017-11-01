@@ -1,13 +1,19 @@
 
 body {
-  background-color: #f5f5f5; 
   color: #202020;
 
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
+	 font-style: italic;
+	 color: black;
 }
+
+a:hover {
+	    	text-transform: uppercase;
+	    }
+
 
 
 .content {
@@ -36,7 +42,7 @@ li {
 .content  {
 	 line-height: 250%;
 	 font-family: 'Lora', serif;
-	 text-align: left;
+	 font-color: black;
 
 
 }

@@ -55,6 +55,15 @@ app.get("/resources",function(req,res) {
 
 });
 
+app.get("/about",function(req,res) {
+  var query = req.query.q;
+
+  
+    return res.render("about"); // render about page
+  
+
+});
+
 
 app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
