@@ -16,9 +16,6 @@ a:hover {
 
 
 
-.content {
-    font-size: 1.8rem;
-}
 
 
 
@@ -43,6 +40,8 @@ li {
 	 line-height: 250%;
 	 font-family: 'Lora', serif;
 	 font-color: black;
+	 font-size: 1.8rem;
+	 text-align: left;
 
 
 }
@@ -50,5 +49,6 @@ li {
 
 .page-header {
 	font-size : 45px;
+	text-align: center;
 }
 
