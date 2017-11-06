@@ -28,7 +28,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e){
 })
 
 
-var currentSelection = "";
+var currentSelection = "#X1";
 
 function showContent(id) {
 	
