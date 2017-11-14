@@ -16,7 +16,7 @@ such as CRISPR from Wikipedia. It is incredibly confusing unless you are an adva
 But if you are an expert or advanced learner, chance are you are not going to need those pages. Is it not a conundrum?
 
 Explain Me Please is an attempt to solve a big problem: making curated, interactive content targeted for the reader
-- a reader who could be a curious elementary or middle schooler, a auditory learner, a visual learner, a five-year-old,
+=> a reader who could be a curious elementary or middle schooler, a auditory learner, a visual learner, a five-year-old,
 or a nerd who wants content delivered to his taste in text, audio and video format.
 
 ## The Plan
@@ -38,28 +38,32 @@ rate.
 - Complex Math Topics
 - Current International Events
 - Financial Concepts
-- Other topics
+- Suggest more ideas using this [issue](https://github.com/faatehim/xplain/issues/2)
 
 ## Contribute 
 
 Explain Me Please (for now) is open source. We love contributers! Do you have any knowledge or experience in a particular subject or area?
 Share your knowledge! 
 
-One thing to remember is to write from the audience's perspective rather than your abilities. Let say you want to write about Quantum Computing.
-You should have numerous categories such as 7 year old, Nerd, Average Joe, Mathematician, etc.
+One thing to remember is to write from the audience's perspective rather than your abilities. Let say you want to write about Quantum computing.
+You should have numerous categories such as 7 year old, nerd, average joe, mathematician, etc.
 
 If it is useful, it will be on the site, credit given to you of course!
 
 - fork & star the repo
-- in the contribute folder, place your project files (source) & the tutorial text in a '.md' file
+- in the contribute folder, place the text (content) in a '.md' file 
 - submit a pull request
 
 If you do not want to go through github, you can email me your content at feedback@explainmeplease.com
 
+If you would like to tweak the ui/mess around with the code/change the layout, please be my guest!
+
+
 ## Things to be done
 
-- Run every page with HTML on it with [W3C validator]{https://validator.w3.org/) and fix errors
+- Run every page with HTML on it with [W3C validator] (https://validator.w3.org/) and fix errors
 - add more visuals
 - add commenting system
+- tweak ui
 
 
