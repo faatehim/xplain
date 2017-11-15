@@ -35,7 +35,9 @@ rate.
 
 ## Future
 
-- Complex Math Topics
+- Quantum Computing (help contribute here => <a href="https://docs.google.com/document/d/1UU7Ori_Lf46rvdsQl3LxJWQFrHjErRZ0ZsyMMFjwtjM/edit?usp=sharing" > Google Doc </a>
+
+Complex Math Topics
 - Current International Events
 - Financial Concepts
 - Suggest more ideas using this [issue](https://github.com/faatehim/xplain/issues/2)
