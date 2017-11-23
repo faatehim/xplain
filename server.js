@@ -40,7 +40,8 @@ var allPages = {
   Bitcoin:"bitcoin",
   Ethereum:"ethereum",
   AI:'ai',
-  Yemen: 'yemen'
+  Yemen: 'yemen',
+  QuantumComputing: "quantumcomputing"
 
 }
 

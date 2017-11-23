@@ -56,5 +56,10 @@ li {
 	padding-bottom: 30px;
 }
 
+iframe {
+    border: 0px;
+    overflow: hidden;
+}
+
 
 

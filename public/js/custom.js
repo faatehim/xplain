@@ -64,7 +64,7 @@ $(document).ready(function() {
 		};
 	};
 
-	var options = ['CRISPR','Ethereum','Bitcoin', "AI", "Yemen"];
+	var options = ['CRISPR','Ethereum','Bitcoin', "AI", "Yemen", "QuantumComputing"];
 
 	$('#the-basics .typeahead').typeahead({
 			hint: true,
