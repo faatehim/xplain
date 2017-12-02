@@ -32,10 +32,9 @@ rate.
 - [CRISPR](http://explainmeplease.com/resources?q=CRISPR)
 - [Artificial Intelligence](http://explainmeplease.com/resources?q=AI)
 - [Yemen Civil War](http://explainmeplease.com/resources?q=Yemen)
+- [Quantum Computing](http://explainmeplease.com/resources?q=QuantumComputing)
 
 ## Future
-
-- Quantum Computing (help contribute here => <a href="https://docs.google.com/document/d/1UU7Ori_Lf46rvdsQl3LxJWQFrHjErRZ0ZsyMMFjwtjM/edit?usp=sharing" > Google Doc </a>
 
 Complex Math Topics
 - Current International Events
@@ -63,7 +62,6 @@ If you would like to tweak the ui/mess around with the code/change the layout, p
 
 ## Things to be done
 
-- Run every page with HTML on it with [W3C validator] (https://validator.w3.org/) and fix errors
 - add more visuals
 - add commenting system
 - tweak ui
