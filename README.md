@@ -43,21 +43,7 @@ Complex Math Topics
 
 ## Contribute 
 
-Explain Me Please (for now) is open source. We love contributers! Do you have any knowledge or experience in a particular subject or area?
-Share your knowledge! 
-
-One thing to remember is to write from the audience's perspective rather than your abilities. Let say you want to write about Quantum computing.
-You should have numerous categories such as 7 year old, nerd, average joe, mathematician, etc.
-
-If it is useful, it will be on the site, credit given to you of course!
-
-- fork & star the repo
-- in the contribute folder, place the text (content) in a '.md' file 
-- submit a pull request
-
-If you do not want to go through github, you can email me your content at feedback@explainmeplease.com
-
-If you would like to tweak the ui/mess around with the code/change the layout, please be my guest!
+See [contributing.md](/Contribute/contributing.md)
 
 
 ## Things to be done
