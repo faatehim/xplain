@@ -41,7 +41,9 @@ var allPages = {
   Ethereum:"ethereum",
   AI:'ai',
   Yemen: 'yemen',
-  QuantumComputing: "quantumcomputing"
+  QuantumComputing: "quantumcomputing",
+  NetNeutrality: "netneutrality",
+  UniversalBasicIncome: "universalbasicincome"
 
 }
 

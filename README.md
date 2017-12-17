@@ -33,6 +33,8 @@ rate.
 - [Artificial Intelligence](http://explainmeplease.com/resources?q=AI)
 - [Yemen Civil War](http://explainmeplease.com/resources?q=Yemen)
 - [Quantum Computing](http://explainmeplease.com/resources?q=QuantumComputing)
+- [Universal Basic Income](http://explainmeplease.com/resources?q=UniversalBasicIncome)
+- [Net Neutrality](http://explainmeplease.com/resources?q=NetNeutrality)
 
 ## Future
 
