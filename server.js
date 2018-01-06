@@ -43,8 +43,8 @@ var allPages = {
   Yemen: 'yemen',
   QuantumComputing: "quantumcomputing",
   NetNeutrality: "netneutrality",
-  UniversalBasicIncome: "universalbasicincome"
-
+  UniversalBasicIncome: "universalbasicincome",
+    Ripple: "ripple"
 }
 
 app.get("/resources",function(req,res) {
