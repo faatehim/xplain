@@ -1,8 +1,8 @@
 
 !function ($) {
-    $(document).on("click","ul.nav li.parent > a ", function(){          
-        $(this).find('em').toggleClass("fa-minus");      
-    }); 
+    $(document).on("click","ul.nav li.parent > a ", function(){
+        $(this).find('em').toggleClass("fa-minus");
+    });
     $(".sidebar span.icon").find('em:first').addClass("fa-plus");
 }
 
@@ -31,7 +31,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e){
 var currentSelection = "#X1";
 
 function showContent(id) {
-	
+
    $(currentSelection).addClass("hidden");
 	 $(id).removeClass("hidden");
 	 currentSelection = id;
@@ -64,7 +64,7 @@ $(document).ready(function() {
 		};
 	};
 
-	var options = ['CRISPR','Ethereum','Bitcoin', "AI", "Yemen", "QuantumComputing", "NetNeutrality", "UniversalBasicIncome", "Ripple"];
+	var options = ['CRISPR','Ethereum','Bitcoin', "AI", "Yemen", "QuantumComputing", "NetNeutrality", "UniversalBasicIncome", "Ripple", "Blockchain"];
 
 	$('#the-basics .typeahead').typeahead({
 			hint: true,

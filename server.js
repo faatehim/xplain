@@ -44,7 +44,8 @@ var allPages = {
   QuantumComputing: "quantumcomputing",
   NetNeutrality: "netneutrality",
   UniversalBasicIncome: "universalbasicincome",
-    Ripple: "ripple"
+    Ripple: "ripple",
+    Blockchain: "blockchain"
 }
 
 app.get("/resources",function(req,res) {
@@ -61,9 +62,9 @@ app.get("/resources",function(req,res) {
 app.get("/about",function(req,res) {
   var query = req.query.q;
 
-  
+
     return res.render("about"); // render about page
-  
+
 
 });
 
@@ -71,7 +72,7 @@ app.get("/about",function(req,res) {
 app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
-  
+
 
 
 
