@@ -36,7 +36,7 @@ rate.
 - [Universal Basic Income](http://explainmeplease.com/resources?q=UniversalBasicIncome)
 - [Net Neutrality](http://explainmeplease.com/resources?q=NetNeutrality)
 - [Ripple](http://explainmeplease.com/resources?q=Ripple)
-
+- [Blockchain](http://explainmeplease.com/resources?q=Blockchain)
 ## Future
 
 Complex Math Topics
