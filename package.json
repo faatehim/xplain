@@ -16,7 +16,7 @@
     "ejs": "^2.5.7",
     "express": "^4.15.4",
     "express-session": "^1.15.5",
-    "morgan": "^1.8.2",
+    "morgan": "^1.9.1",
     "wingcss": "^1.0.0-beta"
   }
 }
