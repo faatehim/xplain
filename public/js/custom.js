@@ -30,6 +30,27 @@ $(document).on('click', '.panel-heading span.clickable', function(e){
 
 var currentSelection = "#X1";
 
+
+function getMode() {
+	return localStorage.getItem('darkmode') == 'true' ? true : false;
+}
+
+function toggleDarkMode() {
+
+	var isDarkMode = localStorage.getItem('darkmode');
+	var element = document.body;
+
+	if (isDarkMode == null || isDarkMode == "false") {
+		localStorage.setItem('darkmode', "true");
+		element.classList.add('dark-mode');
+	}else if (isDarkMode == 'true') {
+		element.classList.remove('dark-mode');
+		localStorage.setItem('darkmode', "false");
+	} 
+
+}
+
+
 function showContent(id) {
 
    $(currentSelection).addClass("hidden");
@@ -39,6 +60,14 @@ function showContent(id) {
 
 $(document).ready(function() {
 
+	var isDarkMode = localStorage.getItem('darkmode');
+	var element = document.body;
+
+	if (isDarkMode == null || isDarkMode == "false") {
+		element.classList.remove('dark-mode');
+	}else if (isDarkMode == 'true') {
+		element.classList.add('dark-mode');
+	} 
 	// the basics
 	// ----------
 
