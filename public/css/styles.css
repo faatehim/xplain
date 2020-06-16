@@ -4,10 +4,24 @@ body {
 
 }
 
+
+
+
 a {
 	text-decoration: none;
 	 font-style: italic;
 	 color: black;
+}
+
+.dark-mode {
+  background-color: #292929;
+  color: #eee;
+}
+
+.dark-mode a {
+	text-decoration: none;
+	 font-style: italic;
+	 color: white;
 }
 
 a:hover {
@@ -15,7 +29,14 @@ a:hover {
 	    }
 
 
+.dark-mode .content  {
+	line-height: 250%;
+	font-family: 'Lora', serif;
+	color: white;
+	font-size: 1.8rem;
+	text-align: left;
 
+}
 
 
 
@@ -39,7 +60,7 @@ li {
 .content  {
 	 line-height: 250%;
 	 font-family: 'Lora', serif;
-	 font-color: black;
+	 color: black;
 	 font-size: 1.8rem;
 	 text-align: left;
 
